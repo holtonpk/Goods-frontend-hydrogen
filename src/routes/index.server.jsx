@@ -52,7 +52,7 @@ export default function Index() {
           <div className="sm:w-[70%] max-w-[900px] w-full h-fit  md:-ml-20">
             {/* <img src={heroImg} alt="" /> */}
             <Image
-              src={heroImg}
+              src="ecommerce-website.png"
               width={'100%'}
               height={'100%'}
               loader={imageLoader}
