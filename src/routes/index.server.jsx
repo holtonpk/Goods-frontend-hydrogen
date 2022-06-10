@@ -21,10 +21,6 @@ import LoadingFallback from '../components/LoadingFallback';
 export default function Index() {
   const {countryCode = 'US'} = useSession();
 
-  const imageLoader = ({src, width, height, scale}) => {
-    return `http://localhost:3000/${src}?w=${width}&h=${height}&scale=${scale}`;
-  };
-
   return (
     <Layout>
       <Suspense fallback={null}>
@@ -51,13 +47,7 @@ export default function Index() {
           </div>
           <div className="sm:w-[70%] max-w-[900px] w-full h-fit  md:-ml-20">
             {/* <img src={heroImg} alt="" /> */}
-            <Image
-              src="ecommerce-website.png"
-              width={'100%'}
-              height={'100%'}
-              loader={imageLoader}
-              loaderOptions={{scale: 1}}
-            />
+            <Image src="ecommerce-website.png" width="100%" height="100%" />
           </div>
           <Link
             to={'/Catalog'}
