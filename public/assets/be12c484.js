@@ -1,0 +1,2 @@
+import{R as p}from"./index.82c951e8.js";import{a as n}from"./949d5e9e.js";import{useProductOptions as m}from"./6838a23b.js";import"./079e9649.js";import"./bc08dc6e.js";import{u as e}from"./7f29416b.js";import"./fdb2e11a.js";import"./7e2b3593.js";import"./acc1a395.js";import"./68abae6d.js";function x({children:o,initialVariantId:t}){const r=e(),i=m({variants:r.variantsConnection,initialVariantId:t});return p.createElement(n.Provider,{value:i},o)}export{x as ProductOptionsProvider};
+//# sourceMappingURL=be12c484.js.map

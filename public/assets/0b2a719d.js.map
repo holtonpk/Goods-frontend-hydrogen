@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "0b2a719d.js",
+  "sources": [
+    "../../../node_modules/@shopify/hydrogen/dist/esnext/foundation/Analytics/connectors/PerformanceMetrics/PerformanceMetricsDebug.client.js"
+  ],
+  "sourcesContent": [
+    "import { useEffect } from 'react';\nimport { ClientAnalytics } from '../../index';\nconst PAD = 10;\nlet isInit = false;\nexport function PerformanceMetricsDebug() {\n    useEffect(() => {\n        if (!isInit) {\n            isInit = true;\n            ClientAnalytics.subscribe(ClientAnalytics.eventNames.PERFORMANCE, (data) => {\n                console.group(`Performance - ${data.page_load_type} load`);\n                logMetricIf('TTFB:', data.response_start - data.navigation_start);\n                logMetricIf('FCP:', data.first_contentful_paint);\n                logMetricIf('LCP:', data.largest_contentful_paint);\n                logMetricIf('Duration:', data.response_end - data.navigation_start);\n                console.groupEnd();\n            });\n        }\n    });\n    return null;\n}\nfunction logMetricIf(lable, data) {\n    data && console.log(`${lable.padEnd(PAD)}${Math.round(data)} ms`);\n}\n"
+  ],
+  "names": [
+    "useEffect"
+  ],
+  "mappings": "sHAEA,KAAM,GAAM,GACZ,GAAI,GAAS,GACN,YAAmC,CACtCA,SAAAA,QAAAA,UAAU,IAAM,CACZ,AAAK,GACD,GAAS,GACT,EAAgB,UAAU,EAAgB,WAAW,YAAa,AAAC,GAAS,CACxE,QAAQ,MAAM,iBAAiB,EAAK,qBAAqB,EACzD,EAAY,QAAS,EAAK,eAAiB,EAAK,gBAAgB,EAChE,EAAY,OAAQ,EAAK,sBAAsB,EAC/C,EAAY,OAAQ,EAAK,wBAAwB,EACjD,EAAY,YAAa,EAAK,aAAe,EAAK,gBAAgB,EAClE,QAAQ,SAAQ,CAChC,CAAa,EAEb,CAAK,EACM,IACX,CACA,WAAqB,EAAO,EAAM,CAC9B,GAAQ,QAAQ,IAAI,GAAG,EAAM,OAAO,CAAG,IAAI,KAAK,MAAM,CAAI,MAAM,CACpE"
+}

@@ -1,0 +1,2 @@
+import{a as r}from"./index.82c951e8.js";import{a as n,b as f,c as m}from"./bdb52c62.js";import"./af829185.js";const h=({stars:l,size:s,fill:o})=>{const c=Math.round(l*2)/2,e=Math.floor(l),S=(c-e)/.5,i=5-e-S;return r("div",{className:"flex flex-row",children:(()=>{let t=[];for(let a=0;a<e;a++)t.push(r(n,{className:o+" "+s},"whole-"+a));for(let a=0;a<S;a++)t.push(r(f,{className:o+" "+s},"half-"+a));for(let a=0;a<i;a++)t.push(r(m,{className:o+" "+s},"empty-"+a));return t})()})};var R=h;export{R as default};
+//# sourceMappingURL=f4e3ce59.js.map

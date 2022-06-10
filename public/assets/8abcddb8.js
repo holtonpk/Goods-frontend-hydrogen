@@ -1,0 +1,2 @@
+import{j as a,a as e}from"./index.82c951e8.js";import{A as s}from"./f9dd6c15.js";import"./af829185.js";const o=({salePercent:t,color:i})=>a("div",{className:"z-0 flex flex-row items-center w-fit h-fit",children:[e(s,{className:"w-3 h-3 mr-1 md:h-5 md:w-5 fill-white"}),e("h1",{className:"text-xs text-white whitespace-nowrap md:text-sm",children:"Sale "+t+"% OFF"})]});export{o as default};
+//# sourceMappingURL=8abcddb8.js.map

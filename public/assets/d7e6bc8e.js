@@ -1,0 +1,2 @@
+import{j as e,a as l}from"./index.82c951e8.js";const r=({position:a,width:s})=>e("div",{className:"relative rounded-full bg-gray-300 h-3 "+s,children:[l("span",{style:{left:a+"%"},className:"absolute z-10 w-4 h-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-c3 top-1/2"}),l("span",{className:"h-full w-0.5 bg-c3 left-1/4 absolute"}),l("span",{className:"h-full w-0.5 bg-c3 left-2/4 absolute"}),l("span",{className:"h-full w-0.5 bg-c3 left-3/4 absolute"})]});export{r as default};
+//# sourceMappingURL=d7e6bc8e.js.map

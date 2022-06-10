@@ -1,0 +1,1 @@
+{"version":3,"file":"a0a18359.js","sources":["../../../node_modules/@shopify/hydrogen/dist/esnext/components/CartProvider/context.js"],"sourcesContent":["import { createContext } from 'react';\nexport const CartContext = createContext(null);\n"],"names":["createContext"],"mappings":"wCACY,KAAC,GAAcA,EAAa,QAAA,cAAC,IAAI"}
