@@ -23,14 +23,15 @@ const SocialBar = ({style}) => {
           .setClassToggle('#findUs', 'slide-in-bottom-abs')
           .addTo(controller);
 
-        new ScrollMagic.Scene({
-          triggerElement: '#sec2',
-          triggerHook: 0.65,
-          reverse: false,
-        })
+        // new ScrollMagic.Scene({
+        //   triggerElement: '#sec2',
+        //   triggerHook: 0.4,
+        //   reverse: false,
+        // })
 
-          .setClassToggle('#CategoryDisplay', 'slide-in-bottom')
-          .addTo(controller);
+        //   .setClassToggle('#CategoryDisplay', 'slide-in-bottom')
+        //   .addTo(controller);
+
         new ScrollMagic.Scene({
           triggerElement: '#promoContainer',
           triggerHook: 0.85,

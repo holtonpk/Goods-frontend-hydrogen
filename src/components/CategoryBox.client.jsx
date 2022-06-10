@@ -19,7 +19,7 @@ const CategoryBox = ({title, description, img, href}) => {
         </Link>
         <div className=" w-[60%] h-full  absolute left-[90%]  -translate-x-1/2 top-1/2 -translate-y-1/2">
           <div className="absolute -translate-y-1/2 h-fit top-1/2">
-            <img src={img} className="w-[150%] h-100%" loading="lazy" />
+            <img rel="preload" src={img} className="w-[150%] h-100%" />
           </div>
         </div>
       </div>

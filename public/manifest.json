@@ -9,7 +9,7 @@
       "src/components/CartProvider.client.jsx",
       "src/components/CartToggle.client.jsx",
       "src/components/CartUIProvider.client.jsx",
-      "src/components/CategoryCard.client.jsx",
+
       "src/components/ContactForm.client.jsx",
       "_0ca257ed.js",
       "src/components/Footer.client.jsx",
@@ -86,17 +86,13 @@
       "node_modules/@shopify/hydrogen/dist/esnext/foundation/Analytics/connectors/PerformanceMetrics/PerformanceMetrics.client.js",
       "node_modules/@shopify/hydrogen/dist/esnext/foundation/Analytics/connectors/PerformanceMetrics/PerformanceMetricsDebug.client.js"
     ],
-    "css": [
-      "assets/index.4a48ab23.css"
-    ]
+    "css": ["assets/index.4a48ab23.css"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/DevTools.client.js": {
     "file": "assets/85f6556b.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/components/DevTools.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "src/components/Button.client.jsx": {
     "file": "assets/59136a2e.js",
@@ -138,86 +134,58 @@
     "file": "assets/079e9649.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/foundation/ShopifyProvider/ShopifyProvider.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_bc08dc6e.js": {
     "file": "assets/bc08dc6e.js",
     "isDynamicEntry": true,
-    "imports": [
-      "_7e2b3593.js",
-      "index.html",
-      "_68abae6d.js"
-    ]
+    "imports": ["_7e2b3593.js", "index.html", "_68abae6d.js"]
   },
   "_a0a18359.js": {
     "file": "assets/a0a18359.js",
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_62f37cd1.js": {
     "file": "assets/62f37cd1.js",
-    "imports": [
-      "index.html",
-      "_c522ed9a.js"
-    ]
+    "imports": ["index.html", "_c522ed9a.js"]
   },
   "_949d5e9e.js": {
     "file": "assets/949d5e9e.js",
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_b848002f.js": {
     "file": "assets/b848002f.js",
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/LocalizationProvider/LocalizationContext.client.js": {
     "file": "assets/3c0798ac.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/components/LocalizationProvider/LocalizationContext.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/foundation/Head/Head.client.js": {
     "file": "assets/eb534036.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/foundation/Head/Head.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_68abae6d.js"
-    ]
+    "imports": ["index.html", "_68abae6d.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/foundation/useRouteParams/RouteParamsProvider.client.js": {
     "file": "assets/12cd6149.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/foundation/useRouteParams/RouteParamsProvider.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_7e2b3593.js": {
     "file": "assets/7e2b3593.js",
-    "imports": [
-      "_acc1a395.js"
-    ]
+    "imports": ["_acc1a395.js"]
   },
   "_d510479e.js": {
     "file": "assets/d510479e.js",
-    "imports": [
-      "_bc08dc6e.js"
-    ]
+    "imports": ["_bc08dc6e.js"]
   },
   "_68abae6d.js": {
     "file": "assets/68abae6d.js",
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_c522ed9a.js": {
     "file": "assets/c522ed9a.js"
@@ -275,28 +243,17 @@
   },
   "_bb354055.js": {
     "file": "assets/bb354055.js",
-    "imports": [
-      "index.html",
-      "_a0a18359.js"
-    ]
+    "imports": ["index.html", "_a0a18359.js"]
   },
   "_aea72a55.js": {
     "file": "assets/aea72a55.js",
-    "imports": [
-      "index.html",
-      "_b848002f.js"
-    ]
+    "imports": ["index.html", "_b848002f.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/CartLineImage/CartLineImage.client.js": {
     "file": "assets/1d91cc0d.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/components/CartLineImage/CartLineImage.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_b848002f.js",
-      "_aea72a55.js",
-      "_71316191.js"
-    ]
+    "imports": ["index.html", "_b848002f.js", "_aea72a55.js", "_71316191.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/CartLinePrice/CartLinePrice.client.js": {
     "file": "assets/2a1b0545.js",
@@ -320,21 +277,13 @@
     "file": "assets/d2cfca52.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/components/CartLineProductTitle/CartLineProductTitle.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_b848002f.js",
-      "_aea72a55.js"
-    ]
+    "imports": ["index.html", "_b848002f.js", "_aea72a55.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/CartLineQuantity/CartLineQuantity.client.js": {
     "file": "assets/25fcba9c.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/components/CartLineQuantity/CartLineQuantity.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_b848002f.js",
-      "_aea72a55.js"
-    ]
+    "imports": ["index.html", "_b848002f.js", "_aea72a55.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/CartCheckoutButton/CartCheckoutButton.client.js": {
     "file": "assets/ec91030d.js",
@@ -396,23 +345,17 @@
   },
   "_378fb5d1.js": {
     "file": "assets/378fb5d1.js",
-    "imports": [
-      "_af829185.js"
-    ]
+    "imports": ["_af829185.js"]
   },
   "src/components/CartUIProvider.client.jsx": {
     "file": "assets/41308c64.js",
     "src": "src/components/CartUIProvider.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_71316191.js": {
     "file": "assets/71316191.js",
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/Money/Money.client.js": {
     "file": "assets/c7f52471.js",
@@ -433,10 +376,7 @@
     "file": "assets/b391421a.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/components/CartLineProvider/CartLineProvider.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_b848002f.js"
-    ]
+    "imports": ["index.html", "_b848002f.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/ShopPayButton/ShopPayButton.client.js": {
     "file": "assets/6af6d366.js",
@@ -453,39 +393,23 @@
   },
   "_af829185.js": {
     "file": "assets/af829185.js",
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_e23961ad.js": {
     "file": "assets/e23961ad.js",
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_2dec53cf.js": {
     "file": "assets/2dec53cf.js",
-    "imports": [
-      "index.html",
-      "_abf02db0.js",
-      "_e23961ad.js",
-      "_acc1a395.js"
-    ]
+    "imports": ["index.html", "_abf02db0.js", "_e23961ad.js", "_acc1a395.js"]
   },
   "_abf02db0.js": {
     "file": "assets/abf02db0.js",
-    "imports": [
-      "index.html",
-      "_acc1a395.js",
-      "_e23961ad.js"
-    ]
+    "imports": ["index.html", "_acc1a395.js", "_e23961ad.js"]
   },
   "_ee4a52e2.js": {
     "file": "assets/ee4a52e2.js",
-    "imports": [
-      "index.html",
-      "_92966185.js"
-    ]
+    "imports": ["index.html", "_92966185.js"]
   },
   "_92966185.js": {
     "file": "assets/92966185.js",
@@ -498,10 +422,7 @@
     "file": "assets/9d1b6292.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/hooks/useLoadScript/useLoadScript.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "_6106a1d6.js",
-      "index.html"
-    ]
+    "imports": ["_6106a1d6.js", "index.html"]
   },
   "_6106a1d6.js": {
     "file": "assets/6106a1d6.js"
@@ -564,19 +485,11 @@
   "_6814dda7.js": {
     "file": "assets/6814dda7.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_92966185.js",
-      "_bc08dc6e.js",
-      "_fdb2e11a.js"
-    ]
+    "imports": ["index.html", "_92966185.js", "_bc08dc6e.js", "_fdb2e11a.js"]
   },
   "_0c9bea84.js": {
     "file": "assets/0c9bea84.js",
-    "imports": [
-      "_62f37cd1.js",
-      "index.html"
-    ]
+    "imports": ["_62f37cd1.js", "index.html"]
   },
   "src/components/CartToggle.client.jsx": {
     "file": "assets/2cbdee0d.js",
@@ -607,18 +520,9 @@
   },
   "_ca60a7d6.js": {
     "file": "assets/ca60a7d6.js",
-    "imports": [
-      "_af829185.js"
-    ]
+    "imports": ["_af829185.js"]
   },
-  "src/components/CategoryCard.client.jsx": {
-    "file": "assets/dc03c3ca.js",
-    "src": "src/components/CategoryCard.client.jsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
-  },
+
   "src/components/ContactForm.client.jsx": {
     "file": "assets/d710f438.js",
     "src": "src/components/ContactForm.client.jsx",
@@ -639,21 +543,11 @@
   },
   "_d462f1cc.js": {
     "file": "assets/d462f1cc.js",
-    "imports": [
-      "_acc1a395.js",
-      "_e23961ad.js",
-      "index.html",
-      "_bfd11c3b.js"
-    ]
+    "imports": ["_acc1a395.js", "_e23961ad.js", "index.html", "_bfd11c3b.js"]
   },
   "_52a93b56.js": {
     "file": "assets/52a93b56.js",
-    "imports": [
-      "index.html",
-      "_acc1a395.js",
-      "_e23961ad.js",
-      "_abf02db0.js"
-    ]
+    "imports": ["index.html", "_acc1a395.js", "_e23961ad.js", "_abf02db0.js"]
   },
   "_282be278.js": {
     "file": "assets/282be278.js",
@@ -691,9 +585,7 @@
     "file": "assets/4332cc9a.js",
     "src": "src/components/SpinnerIcon.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_a5164085.js": {
     "file": "assets/a5164085.js"
@@ -724,9 +616,7 @@
   },
   "_384deb5d.js": {
     "file": "assets/384deb5d.js",
-    "assets": [
-      "assets/goodslogo.10855b34.svg"
-    ]
+    "assets": ["assets/goodslogo.10855b34.svg"]
   },
   "src/components/Gallery.client.jsx": {
     "file": "assets/e9ff33bf.js",
@@ -760,10 +650,7 @@
   },
   "_7f29416b.js": {
     "file": "assets/7f29416b.js",
-    "imports": [
-      "index.html",
-      "_949d5e9e.js"
-    ]
+    "imports": ["index.html", "_949d5e9e.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/ModelViewer/ModelViewer.client.js": {
     "file": "assets/08cf8558.js",
@@ -823,29 +710,19 @@
   },
   "_ac84e256.js": {
     "file": "assets/ac84e256.js",
-    "imports": [
-      "_af829185.js"
-    ]
+    "imports": ["_af829185.js"]
   },
   "src/components/SearchToggle.client.jsx": {
     "file": "assets/4f8e2324.js",
     "src": "src/components/SearchToggle.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "_ca60a7d6.js",
-      "index.html",
-      "_af829185.js"
-    ]
+    "imports": ["_ca60a7d6.js", "index.html", "_af829185.js"]
   },
   "src/components/Search.client.jsx": {
     "file": "assets/1d483a0a.js",
     "src": "src/components/Search.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_ca60a7d6.js",
-      "_af829185.js"
-    ]
+    "imports": ["index.html", "_ca60a7d6.js", "_af829185.js"]
   },
   "src/components/Navigation.client.jsx": {
     "file": "assets/2129e4cc.js",
@@ -901,9 +778,7 @@
   },
   "_bdb52c62.js": {
     "file": "assets/bdb52c62.js",
-    "imports": [
-      "_af829185.js"
-    ]
+    "imports": ["_af829185.js"]
   },
   "src/components/Signin.client.jsx": {
     "file": "assets/2d14a4b0.js",
@@ -919,9 +794,7 @@
   },
   "_75b6e6a5.js": {
     "file": "assets/75b6e6a5.js",
-    "imports": [
-      "_af829185.js"
-    ]
+    "imports": ["_af829185.js"]
   },
   "src/components/MobileCountrySelector.client.jsx": {
     "file": "assets/d7334bd7.js",
@@ -1194,9 +1067,7 @@
   },
   "_f9dd6c15.js": {
     "file": "assets/f9dd6c15.js",
-    "imports": [
-      "_af829185.js"
-    ]
+    "imports": ["_af829185.js"]
   },
   "src/components/ProductOptions.client.jsx": {
     "file": "assets/706e639c.js",
@@ -1226,11 +1097,7 @@
     "file": "assets/f4e3ce59.js",
     "src": "src/components/ReviewStarts.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_bdb52c62.js",
-      "_af829185.js"
-    ]
+    "imports": ["index.html", "_bdb52c62.js", "_af829185.js"]
   },
   "_8d0f518c.js": {
     "file": "assets/8d0f518c.js",
@@ -1278,18 +1145,13 @@
     "file": "assets/d7e6bc8e.js",
     "src": "src/components/ReviewsSlider.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/hooks/useProductOptions/useProductOptions.client.js": {
     "file": "assets/6838a23b.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/hooks/useProductOptions/useProductOptions.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_fdb2e11a.js"
-    ]
+    "imports": ["index.html", "_fdb2e11a.js"]
   },
   "_cc9718ab.js": {
     "file": "assets/cc9718ab.js"
@@ -1298,51 +1160,31 @@
     "file": "assets/4274e311.js",
     "src": "src/components/PromoCards.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_af829185.js",
-      "_378fb5d1.js",
-      "_f9dd6c15.js"
-    ],
-    "assets": [
-      "assets/card1img.7ae67c02.png",
-      "assets/card2img.aafe5f6f.jpeg"
-    ]
+    "imports": ["index.html", "_af829185.js", "_378fb5d1.js", "_f9dd6c15.js"],
+    "assets": ["assets/card1img.7ae67c02.png", "assets/card2img.aafe5f6f.jpeg"]
   },
   "src/components/SaleTag.client.jsx": {
     "file": "assets/8abcddb8.js",
     "src": "src/components/SaleTag.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_f9dd6c15.js",
-      "_af829185.js"
-    ]
+    "imports": ["index.html", "_f9dd6c15.js", "_af829185.js"]
   },
   "src/components/SocialBar.client.jsx": {
     "file": "assets/30a04014.js",
     "src": "src/components/SocialBar.client.jsx",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_af829185.js"
-    ]
+    "imports": ["index.html", "_af829185.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/foundation/AnalyticsErrorBoundary.client.js": {
     "file": "assets/bd831a5d.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/foundation/AnalyticsErrorBoundary.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html"
-    ]
+    "imports": ["index.html"]
   },
   "_f021e09b.js": {
     "file": "assets/f021e09b.js",
     "isDynamicEntry": true,
-    "imports": [
-      "_cc9718ab.js",
-      "index.html"
-    ]
+    "imports": ["_cc9718ab.js", "index.html"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/components/LocalizationProvider/LocalizationClientProvider.client.js": {
     "file": "assets/509857df.js",
@@ -1648,12 +1490,7 @@
     "file": "assets/22b30385.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/foundation/Analytics/Analytics.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_62f37cd1.js",
-      "_0c9bea84.js",
-      "_c522ed9a.js"
-    ]
+    "imports": ["index.html", "_62f37cd1.js", "_0c9bea84.js", "_c522ed9a.js"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/foundation/Redirect/Redirect.client.js": {
     "file": "assets/5316326a.js",
@@ -1671,28 +1508,17 @@
   "_925d14de.js": {
     "file": "assets/925d14de.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_cc9718ab.js",
-      "_c522ed9a.js"
-    ]
+    "imports": ["index.html", "_cc9718ab.js", "_c522ed9a.js"]
   },
   "_358f5ec1.js": {
     "file": "assets/358f5ec1.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_b9e7d43b.js"
-    ]
+    "imports": ["index.html", "_b9e7d43b.js"]
   },
   "_b9e7d43b.js": {
     "file": "assets/b9e7d43b.js",
     "isDynamicEntry": true,
-    "imports": [
-      "_cc9718ab.js",
-      "_7e2b3593.js",
-      "index.html"
-    ]
+    "imports": ["_cc9718ab.js", "_7e2b3593.js", "index.html"]
   },
   "node_modules/@shopify/hydrogen/dist/esnext/foundation/Analytics/connectors/PerformanceMetrics/PerformanceMetrics.client.js": {
     "file": "assets/127203fa.js",
@@ -1713,11 +1539,6 @@
     "file": "assets/0b2a719d.js",
     "src": "node_modules/@shopify/hydrogen/dist/esnext/foundation/Analytics/connectors/PerformanceMetrics/PerformanceMetricsDebug.client.js",
     "isDynamicEntry": true,
-    "imports": [
-      "index.html",
-      "_62f37cd1.js",
-      "_0c9bea84.js",
-      "_c522ed9a.js"
-    ]
+    "imports": ["index.html", "_62f37cd1.js", "_0c9bea84.js", "_c522ed9a.js"]
   }
 }

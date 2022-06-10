@@ -1,1 +1,15 @@
-{"version":3,"file":"dc03c3ca.js","sources":["../../../src/components/CategoryCard.client.jsx"],"sourcesContent":["import React from 'react';\n\nconst CategoryCard = () => {\n  return (\n    <div className=\"bg-back-2 rounded-xl\">\n      <h1 className=\"md:text-5xl text-2xl text-c1 font-f1 text-center md:text-left font-bold mb-3\">\n        Furniture\n      </h1>\n      <h2 className=\"text-2xl hidden md:block  text-gray-500 font-f1 mb-3 w-3/4 text-left\">\n        Browse our unique collection of drinking glasses, home decor and more\n      </h2>\n\n      <button className=\"p-2 mx-auto text-xl rounded-fullbg-white shadow-lg w-fit font-f1 md:hidden \">\n        Shop now\n      </button>\n    </div>\n  );\n};\n\nexport default CategoryCard;\n"],"names":["CategoryCard","_jsx"],"mappings":"+CAEA,KAAMA,GAAe,MAEjB,MAAA,CAAK,UAAU,uBAAf,SACE,CAAAC,EAAA,KAAA,CAAI,UAAU,+EAAd,SAAA,WAAA,CAAA,EAGAA,EAAA,KAAA,CAAI,UAAU,uEAAd,SAAA,uEAAA,CAAA,EAIAA,EAAA,SAAA,CAAQ,UAAU,8EAAlB,SAAA,UAAA,CARF,CAAA,CAAA,CADF"}
+{
+  "version": 3,
+  "file": "dc03c3ca.js",
+  "sources": [
+    "../../../src/components/CategoryCard.client.jsx"
+  ],
+  "sourcesContent": [
+    "import React from 'react';\n\nconst CategoryCard = () => {\n  return (\n    <div className=\"bg-back-2 rounded-xl\">\n      <h1 className=\"md:text-5xl text-2xl text-c1 font-f1 text-center md:text-left font-bold mb-3\">\n        Furniture\n      </h1>\n      <h2 className=\"text-2xl hidden md:block  text-gray-500 font-f1 mb-3 w-3/4 text-left\">\n        Browse our unique collection of drinking glasses, home decor and more\n      </h2>\n\n      <button className=\"p-2 mx-auto text-xl rounded-fullbg-white shadow-lg w-fit font-f1 md:hidden \">\n        Shop now\n      </button>\n    </div>\n  );\n};\n\nexport default CategoryCard;\n"
+  ],
+  "names": [
+    "CategoryCard",
+    "_jsx"
+  ],
+  "mappings": "+CAEA,KAAMA,GAAe,MAEjB,MAAA,CAAK,UAAU,uBAAf,SACE,CAAAC,EAAA,KAAA,CAAI,UAAU,+EAAd,SAAA,WAAA,CAAA,EAGAA,EAAA,KAAA,CAAI,UAAU,uEAAd,SAAA,uEAAA,CAAA,EAIAA,EAAA,SAAA,CAAQ,UAAU,8EAAlB,SAAA,UAAA,CARF,CAAA,CAAA,CADF"
+}

@@ -72,8 +72,11 @@ export default function Index() {
         id="sec2"
         className="relative flex flex-col w-screen h-full bg-white md:flex-col "
       >
-        <div id="CategoryDisplay" className="opacity-0">
-          <div className="flex-col justify-between mx-auto mt-40 w-fit md:grid md:grid-cols-3 md:gap-4 ">
+        <div className="">
+          <div
+            id="CategoryDisplay"
+            className="flex-col justify-between mx-auto mt-40 w-fit md:grid md:grid-cols-3 md:gap-4"
+          >
             <CategoryBox
               title="Tech"
               description=" Browse our unique collection of drinking glasses, home decor and

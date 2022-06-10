@@ -3,7 +3,7 @@ import logo from '../../public/goodslogo.svg';
 export default function Footer({collection, product}) {
   return (
     <footer role="contentinfo">
-      <div className="flex flex-row items-center w-full py-3 md:py-6 bg-back-1 h-fit">
+      <div className="z-40 flex flex-row items-center w-full py-3 md:py-6 bg-back-1 h-fit">
         <Link className="relative mx-auto " to="/">
           <img src={logo} alt="" className="w-[100px] md:w-[200px] h-fit" />
         </Link>
