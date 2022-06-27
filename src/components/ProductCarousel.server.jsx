@@ -1,7 +1,7 @@
 import React from 'react';
 import {useShopQuery, flattenConnection, Link} from '@shopify/hydrogen';
 import gql from 'graphql-tag';
-import ProductCard from './ProductCard';
+import ProductCard from './ProductCard.client';
 const ProductCarousel = ({handle, title}) => {
   const {data} = useShopQuery({
     query: QUERY,
@@ -37,7 +37,7 @@ const ProductCarousel = ({handle, title}) => {
               Shop all
             </Link>
           </div>
-          <div className="grid justify-between w-full grid-cols-2 mx-auto mb-8 justify-items-center sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid justify-between w-full grid-cols-2 mx-auto mb-8 justify-items-center sm:grid-cols-2 lg:grid-cols-4 ">
             {products.map((product) => {
               return <ProductCard key={product.id} product={product} />;
             })}

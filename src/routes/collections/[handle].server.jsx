@@ -9,7 +9,7 @@ import gql from 'graphql-tag';
 
 import LoadMoreProducts from '../../components/LoadMoreProducts.client';
 import Layout from '../../components/Layout.server';
-import ProductCard from '../../components/ProductCard';
+import ProductCard from '../../components/ProductCard.client';
 import NotFound from '../../components/NotFound.server';
 
 export default function Collection({collectionProductCount = 24, params}) {

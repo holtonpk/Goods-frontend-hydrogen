@@ -9,7 +9,7 @@ import gql from 'graphql-tag';
 
 import LoadMoreProducts from '../../components/LoadMoreProducts.client';
 import Layout from '../../components/Layout.server';
-import ProductCard from '../../components/ProductCard';
+import ProductCard from '../../components/ProductCard.client';
 import NotFound from '../../components/NotFound.server';
 
 export default function Catalog({collectionProductCount = 24, params}) {
@@ -65,9 +65,9 @@ export default function Catalog({collectionProductCount = 24, params}) {
         {/* <p className="mt-5 mb-5 text-sm text-gray-500">
         {products.length} {products.length > 1 ? 'products' : 'product'}
       </p> */}
-        <ul className="grid grid-cols-2 gap-1 xsm:gap-4 mx-auto mb-16 md:gap-12 md:px-0 w-[90%] md:grid-cols-3 xl:grid-cols-4 min-w-[290px] bg-white ">
+        <ul className="grid prodGrid gap-1 xsm:gap-4 mx-auto mb-16  md:px-0 w-[90%]   min-w-[290px] bg-white ">
           {products.map((product) => (
-            <li key={product.id}>
+            <li className="h-full " key={product.id}>
               <ProductCard product={product} />
             </li>
           ))}

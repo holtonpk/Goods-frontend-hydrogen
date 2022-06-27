@@ -34,7 +34,7 @@ export default function Layout({children, hero}) {
   const storeName = data ? data.shop.name : '';
 
   return (
-    <LocalizationProvider preload="*">
+    <LocalizationProvider preload="true">
       <Head>
         <link rel="icon" href={fav} />
       </Head>

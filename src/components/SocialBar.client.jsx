@@ -25,7 +25,7 @@ const SocialBar = ({style}) => {
 
         // new ScrollMagic.Scene({
         //   triggerElement: '#sec2',
-        //   triggerHook: 0.4,
+        //   triggerHook: 0.9,
         //   reverse: false,
         // })
 

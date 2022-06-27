@@ -8,7 +8,7 @@ import gql from 'graphql-tag';
 
 import Layout from './Layout.server';
 import Button from './Button.client';
-import ProductCard from './ProductCard';
+import ProductCard from './ProductCard.client';
 
 /**
  * A server component that defines the content to display when a page isn't found (404 error)
@@ -16,11 +16,11 @@ import ProductCard from './ProductCard';
 function NotFoundHero() {
   return (
     <div className="py-10 border-b border-gray-200">
-      <div className="max-w-3xl text-center mx-4 md:mx-auto">
-        <h1 className="font-bold text-4xl md:text-5xl text-gray-900 mb-6 mt-6">
+      <div className="max-w-3xl mx-4 text-center md:mx-auto">
+        <h1 className="mt-6 mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
           We&#39;ve lost this page
         </h1>
-        <p className="text-lg m-8 text-gray-500">
+        <p className="m-8 text-lg text-gray-500">
           We couldn’t find the page you’re looking for. Try checking the URL or
           heading back to the home page.
         </p>
@@ -56,10 +56,10 @@ export default function NotFound({response}) {
     <Layout>
       <NotFoundHero />
       <div className="my-8">
-        <p className="mb-8 text-lg text-black font-medium uppercase">
+        <p className="mb-8 text-lg font-medium text-black uppercase">
           Products you might like
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 gap-8 mb-16 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <div key={product.id}>
               <ProductCard product={product} />

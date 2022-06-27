@@ -11,13 +11,14 @@ import gql from 'graphql-tag';
 import SocialBar from '../components/SocialBar.client';
 import Layout from '../components/Layout.server';
 import FeaturedCollection from '../components/FeaturedCollection';
-import ProductCard from '../components/ProductCard';
+import ProductCard from '../components/ProductCard.client';
 import {Suspense} from 'react';
 import PromoCards from '../components/PromoCards.client';
 import {Image} from '@shopify/hydrogen';
 import heroImg from '../../public/ecommerce-website.png';
 import CategoryBox from '../components/CategoryBox.client';
 import LoadingFallback from '../components/LoadingFallback';
+import Carousel from '../components/Carousel.client.jsx';
 export default function Index() {
   const {countryCode = 'US'} = useSession();
 
@@ -70,7 +71,7 @@ export default function Index() {
 
       <div
         id="sec2"
-        className="relative flex flex-col w-screen h-full bg-white md:flex-col "
+        className="relative flex flex-col w-screen h-full bg-white md:flex-col"
       >
         <div className="">
           <div
@@ -157,40 +158,7 @@ function FeaturedProductsBox() {
   const collection = data.collection;
   const products = flattenConnection(collection.products);
 
-  return (
-    <div className="mt-10 mb-10 md:w-[90%] md:mx-auto max-w-[1700px]">
-      {products ? (
-        <>
-          <div className="flex items-center justify-between mb-8 font-medium text-md ">
-            <span className="mx-auto text-4xl uppercase md:mx-0 text-c1 ">
-              Clearance
-            </span>
-            <span className="hidden md:inline-flex">
-              <Link
-                to={`/collections/${products.handle}`}
-                className="text-blue-600 hover:underline"
-              >
-                Shop all
-              </Link>
-            </span>
-          </div>
-          <div className="grid grid-cols-2 gap-12 mx-auto mb-8 w-fit md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5">
-            {products.map((product) => {
-              return <ProductCard key={product.id} product={product} />;
-            })}
-          </div>
-          <div className="text-center md:hidden">
-            <Link
-              to={`/collections/${products.handle}`}
-              className="text-blue-600"
-            >
-              Shop all
-            </Link>
-          </div>
-        </>
-      ) : null}
-    </div>
-  );
+  return <Carousel products={products} title={'Clearance'} />;
 }
 
 const SEO_QUERY = gql`
@@ -219,7 +187,7 @@ const QUERY = gql`
         height
         altText
       }
-      products(first: 5) {
+      products(first: 10) {
         edges {
           node {
             title

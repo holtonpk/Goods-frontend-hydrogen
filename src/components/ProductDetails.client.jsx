@@ -128,7 +128,7 @@ function ProductPrices() {
         variantId={product.selectedVariant.id}
       />
       <ProductPrice
-        className="mr-3 text-3xl font-semibold text-c1"
+        className="mr-3 text-3xl font-semibold text-c4"
         variantId={product.selectedVariant.id}
       />
       <Sale />
@@ -148,8 +148,8 @@ function Sale() {
   if (product.selectedVariant.compareAtPriceV2)
     return (
       <div className="flex flex-row items-center w-fit">
-        <AiFillTag className="w-4 h-4 mr-1 md:h-6 md:w-6 fill-c1" />
-        <h1 className="text-c1 text-md md:text-lg whitespace-nowrap">
+        <AiFillTag className="w-4 h-4 mr-1 md:h-6 md:w-6 fill-c4" />
+        <h1 className="text-c4 text-md md:text-lg whitespace-nowrap">
           {getSalePercent() + '% OFF'}
         </h1>
       </div>

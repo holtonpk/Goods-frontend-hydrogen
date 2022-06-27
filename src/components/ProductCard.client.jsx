@@ -13,9 +13,10 @@ export default function ProductCard({product}) {
   if (selectedVariant == null) {
     return null;
   }
+  console.log('/products/' + product.handle);
 
   return (
-    <div className="relative w-[150px]  xsm:w-[200px] xsm:min-h-[300px] h-fit  pb-4 mx-auto mb-4 overflow-hidden bg-white shadow-xl text-md md:mx-0 rounded-3xl ">
+    <button className="relative w-full h-full pb-4 mb-4 overflow-hidden bg-white shadow-xl xsm:w-full text-md rounded-3xl ">
       {(() => {
         if (selectedVariant.compareAtPriceV2) {
           let salePercent = Math.round(
@@ -32,40 +33,35 @@ export default function ProductCard({product}) {
           );
         }
       })()}
-      <Link to={`/products/${product.handle}`}>
-        <div className="relative flex items-center justify-center object-cover w-full xsm:h-[200px]  h-[150px]">
+      <Link to={'products/' + product.handle}>
+        <div className="relative flex items-center justify-center object-cover w-full  h-[60%] ">
           <Image
-            className="absolute top-0 object-center w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover rounded-t-3xl hover:scale-110"
+            className="absolute top-0 object-center w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover rounded-t-3xl "
             data={selectedVariant.image}
           />
-          ) : null}
           {!selectedVariant?.availableForSale && (
             <div className="absolute px-4 py-3 text-xs text-white bg-black top-3 left-3 rounded-3xl">
               Out of stock
             </div>
           )}
         </div>
-        <div className="px-6 pl-2 w-fit md:mx-0">
+        <div className="px-6 pl-2 w-fit md:mx-0 ">
           {/* {product.vendor && (
             <p className="text-gray-900 font-medium text-xs md:text-sm mb-0.5">
               {product.vendor}
             </p>
           )} */}
 
-          <span className="text-c2 font-semibold mb-0.5 xsm:text-xl text-sm w-[60%]">
+          <div className="text-c2 font-semibold mb-0.5 text-xl  w-[90%] h-[60px] overflow-hidden">
             {product.title}
-          </span>
+          </div>
 
           <div
             id="reviews"
             className="flex flex-row items-center order-2 w-fit"
           >
-            <ReviewStars
-              stars={4.5}
-              size="xsm:h-6 xsm:w-6 h-3 w-3"
-              fill="fill-yellow-500"
-            />
-            <h2 className="text-xs text-black whitespace-nowrap xsm:text-lg ">
+            <ReviewStars stars={4.5} size="h-6 w-6 " fill="fill-yellow-500" />
+            <h2 className="text-lg text-black whitespace-nowrap">
               4.0 (12)
               {/* {'(' + reviewData.length + ')'} */}
             </h2>
@@ -83,6 +79,6 @@ export default function ProductCard({product}) {
           </div>
         </div>
       </Link>
-    </div>
+    </button>
   );
 }
