@@ -9,7 +9,7 @@ import gql from 'graphql-tag';
 
 import LoadMoreProducts from '../../components/LoadMoreProducts.client';
 import Layout from '../../components/Layout.server';
-import ProductCard from '../../components/ProductCard.client';
+import ProductCard from '../../components/ProductCard2.client';
 import NotFound from '../../components/NotFound.server';
 
 export default function Catalog({collectionProductCount = 24, params}) {
@@ -45,8 +45,8 @@ export default function Catalog({collectionProductCount = 24, params}) {
     <Layout>
       {/* the seo object will be expose in API version 2022-04 or later */}
       <Seo type="collection" data={collection} />
-      <div className="bg-white md:pt-10">
-        <div className="flex flex-col w-full bg-white h-fit md:mt-0 md:mb-8">
+      <div className="bg-white h-fit">
+        <div className="flex flex-col w-full bg-white h-fit md:mt-0 ">
           <h1 className="mx-auto mt-6 mb-6 text-4xl font-bold text-center text-c2 md:text-5xl w-fit ">
             {(() => {
               if (collection.title === 'all') {
@@ -65,9 +65,9 @@ export default function Catalog({collectionProductCount = 24, params}) {
         {/* <p className="mt-5 mb-5 text-sm text-gray-500">
         {products.length} {products.length > 1 ? 'products' : 'product'}
       </p> */}
-        <ul className="grid prodGrid gap-1 xsm:gap-4 mx-auto mb-16  md:px-0 w-[90%]   min-w-[290px] bg-white ">
+        <ul className="grid prodGrid  h-fit mx-auto mb-4 md:px-0 w-[100%] sm:w-[90%] min-w-[290px] bg-white pt-6 rounded-t-2xl">
           {products.map((product) => (
-            <li className="h-full " key={product.id}>
+            <li className="mx-auto prodCard " key={product.id}>
               <ProductCard product={product} />
             </li>
           ))}

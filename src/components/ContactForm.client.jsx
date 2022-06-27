@@ -43,7 +43,7 @@ const ContactForm = () => {
       {/* <h1 className="mx-auto text-5xl font-bold text-center text-c2 font-f1">
         How can we help you?
       </h1> */}
-      <div className="grid items-center grid-cols-1 md:grid-cols-2 md:gap-10 gap-4 mb-4 mt-4 md:mt-0">
+      <div className="grid items-center grid-cols-1 gap-4 mt-4 mb-4 md:grid-cols-2 md:gap-10 md:mt-0">
         <ValidationTextField
           fullWidth
           name="firstName"
@@ -68,7 +68,7 @@ const ContactForm = () => {
         />
       </div>
 
-      <div className="grid items-center  md:gap-10  grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid items-center grid-cols-1 gap-4 md:gap-10 md:grid-cols-2">
         <ValidationTextField
           fullWidth
           name="email"
@@ -93,7 +93,7 @@ const ContactForm = () => {
         />
       </div>
       <FormControl>
-        <h1 className="text-lg font-bold text-white font-f1 text-center md:text-left">
+        <h1 className="text-lg font-bold text-center text-white font-f1 md:text-left">
           What can we help you with?
         </h1>
 
@@ -136,7 +136,7 @@ const ContactForm = () => {
         />
       </div>
 
-      <button className="p-4 text-xl font-bold text-white rounded-full md:text-3xl md:p-2 h-fit bg-c4 font-c1 -mt-16 md:mt-0">
+      <button className="p-4 text-xl font-bold text-white rounded-full md:text-3xl md:p-2 h-fit bg-c4 font-c1 -mt-16 md:mt-0 w-[50%] min-w-fit mx-auto">
         <div className="flex flex-row items-center mx-auto w-fit">
           <h2 className="whitespace-nowrap">Send Message</h2>
           <IoSend className="w-4 h-4 ml-4 md:w-6 md:h-6 fill-white" />

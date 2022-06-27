@@ -3,6 +3,7 @@ import {
   useShop,
   useShopQuery,
   Seo,
+  flattenConnection,
   useRouteParams,
 } from '@shopify/hydrogen';
 import gql from 'graphql-tag';
@@ -11,6 +12,8 @@ import ProductDetails from '../../components/ProductDetails.client';
 import NotFound from '../../components/NotFound.server';
 import Layout from '../../components/Layout.server';
 import ProductCarousel from '../../components/ProductCarousel.server';
+import Carousel from '../../components/Carousel.client.jsx';
+
 export default function Product() {
   const {handle} = useRouteParams();
   const {countryCode = 'US'} = useSession();
@@ -38,9 +41,37 @@ export default function Product() {
     <Layout>
       <Seo type="product" data={product} />
       <ProductDetails product={product} />
-      <ProductCarousel handle="all" title="You may also like" />
+      <FeaturedProductsBox country={countryCode} />
     </Layout>
   );
+}
+
+function FeaturedProductsBox() {
+  const {languageCode} = useShop();
+  const {countryCode = 'US'} = useSession();
+
+  console.log('LANG', languageCode);
+  console.log('COnt', countryCode);
+
+  const {data} = useShopQuery({
+    query: QUERY2,
+    variables: {
+      handle: 'all',
+      country: countryCode,
+      language: languageCode,
+      numProducts: 5,
+    },
+    preload: true,
+  });
+
+  if (data?.collection == null) {
+    return <></>;
+  }
+
+  const collection = data.collection;
+  const products = flattenConnection(collection.products);
+
+  return <Carousel products={products} title={'You may also like'} />;
 }
 
 const QUERY = gql`
@@ -173,6 +204,74 @@ const QUERY = gql`
         }
       }
       vendor
+    }
+  }
+`;
+const QUERY2 = gql`
+  query CollectionDetails($country: CountryCode, $language: LanguageCode)
+  @inContext(country: $country, language: $language) {
+    collection(handle: "Sale") {
+      title
+      descriptionHtml
+      description
+      seo {
+        description
+        title
+      }
+      image {
+        id
+        url
+        width
+        height
+        altText
+      }
+      products(first: 10) {
+        edges {
+          node {
+            title
+            vendor
+            handle
+            descriptionHtml
+            compareAtPriceRange {
+              maxVariantPrice {
+                currencyCode
+                amount
+              }
+              minVariantPrice {
+                currencyCode
+                amount
+              }
+            }
+            variants(first: 1) {
+              edges {
+                node {
+                  id
+                  title
+                  availableForSale
+                  image {
+                    id
+                    url
+                    altText
+                    width
+                    height
+                  }
+                  priceV2 {
+                    currencyCode
+                    amount
+                  }
+                  compareAtPriceV2 {
+                    currencyCode
+                    amount
+                  }
+                }
+              }
+            }
+          }
+        }
+        pageInfo {
+          hasNextPage
+        }
+      }
     }
   }
 `;

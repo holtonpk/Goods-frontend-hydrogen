@@ -229,7 +229,7 @@ function CartEmpty() {
       <button
         type="button"
         onClick={closeCart}
-        className={BUTTON_PRIMARY_CLASSES}
+        className={BUTTON_PRIMARY_CLASSES + ' bg-c2'}
       >
         Continue Shopping
       </button>

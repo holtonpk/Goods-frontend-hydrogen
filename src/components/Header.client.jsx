@@ -69,9 +69,8 @@ export default function Header({collections, storeName}) {
 
       <div>
         <header
-          className={`top-0 bg-back-1 left-0   w-full relative min-h-fit  h-[10vh] sm:h-[15vh] lg:h-[15vh] lg:pb-0 mx-auto     ${
-            isMobileNavOpen ? '' : 'bg-opacity-95'
-          }`}
+          className={`top-0 bg-back-1 left-0   w-full relative min-h-fit  h-[10vh] sm:h-[15vh] lg:h-[15vh] lg:pb-0 mx-auto    
+           ${isMobileNavOpen ? '' : 'bg-opacity-95'}`}
           role="banner"
         >
           <div
@@ -80,7 +79,7 @@ export default function Header({collections, storeName}) {
               paddingRight: isCartOpen ? scrollbarWidth : 0,
             }}
           >
-            <div className="grid items-center w-11/12 grid-cols-3 pb-2 mx-auto bg-back-1 top-1/2">
+            <div className="grid items-center w-11/12 grid-cols-3 pb-2 mx-auto bg-back-1 top-1/2 ">
               <MobileNavigation
                 collections={collections}
                 isOpen={isMobileNavOpen}
@@ -102,7 +101,6 @@ export default function Header({collections, storeName}) {
               <div className="order-3 w-full mx-auto md:w-full ">
                 <div className="flex flex-row justify-between float-right w-fit h-fit">
                   <SearchToggle />
-
                   <Link
                     to="/Order"
                     id="tracking"

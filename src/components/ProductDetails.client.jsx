@@ -38,15 +38,21 @@ function AddToCartMarkup() {
   const scroll = () => {
     let element = document.getElementById('buyNow');
     var topPos = element.getBoundingClientRect().top + element.offsetHeight;
+    var topPos2 =
+      document.getElementById('addButton').getBoundingClientRect().top +
+      element.offsetHeight;
     var stickPoint = window.innerHeight;
     if (topPos < stickPoint) {
-      console.log('stick');
       element.classList.add('stickyButton');
     } else {
       element.classList.remove('stickyButton');
     }
-    console.log(window.scrollY);
-    console.log(stickPoint * 1.2);
+    if (
+      topPos2 >
+      stickPoint - document.getElementById('buyNow').clientHeight - 8
+    ) {
+      element.classList.remove('stickyButton');
+    }
 
     if (window.scrollY > stickPoint) {
       document.getElementById('supportButton').classList.remove('hidden');
@@ -59,7 +65,7 @@ function AddToCartMarkup() {
   });
 
   return (
-    <div className="mb-4 space-y-2 ">
+    <div className="w-full mb-4 space-y-2 ">
       <Link
         onClick={() => setIsOpen(false)}
         to={'/Contact'}
@@ -128,7 +134,7 @@ function ProductPrices() {
         variantId={product.selectedVariant.id}
       />
       <ProductPrice
-        className="mr-3 text-3xl font-semibold text-c4"
+        className="mr-3 text-3xl font-semibold text-c2"
         variantId={product.selectedVariant.id}
       />
       <Sale />
@@ -162,14 +168,14 @@ export default function ProductDetails({product}) {
   return (
     <>
       <ProductProvider data={product} initialVariantId={initialVariant.id}>
-        <div className="grid grid-cols-1 md:grid-cols-[2fr,1fr] md:gap-x-8 md:mb-16 w-full bg-gray-200 md:bg-white">
+        <div className="grid grid-cols-1  md:grid-cols-[2fr,1fr] md:gap-x-8 md:mb-16 md:w-[80%] md:mx-auto bg-gray-200 md:bg-white">
           <Gallery />
 
           <div>
             <div className="hidden mt-3 md:block">
               <div id="reviews" className="flex flex-row items-center w-fit">
-                <ReviewStars stars={4.5} size="h-6 w-6" fill="fill-black" />
-                <h2 className="text-lg text-black ">
+                <ReviewStars stars={4.5} size="h-6 w-6" fill="fill-c1" />
+                <h2 className="text-lg text-c1 ">
                   {'(' + reviewData.length + ')'}
                 </h2>
               </div>
@@ -189,13 +195,16 @@ export default function ProductDetails({product}) {
                   id="reviews"
                   className="flex flex-row items-center order-2 w-fit"
                 >
-                  <ReviewStars stars={4.5} size="h-4 w-4" fill="fill-black" />
-                  <h2 className="text-black text-md ">
+                  <ReviewStars stars={4.5} size="h-4 w-4" fill="fill-c1" />
+                  <h2 className="text-c1 text-md ">
                     {'(' + reviewData.length + ')'}
                   </h2>
                 </div>
                 <div className="flex flex-col">
-                  <ProductTitle as="h1" className="text-xl font-bold text-c2" />
+                  <ProductTitle
+                    as="h1"
+                    className="text-2xl font-bold text-c2"
+                  />
                   {/* {product.vendor && (
                     <div className="mb-2 text-sm font-medium text-gray-900">
                       {product.vendor}
@@ -215,20 +224,20 @@ export default function ProductDetails({product}) {
             </div>
             <div className="flex flex-col justify-between w-full p-6 mx-auto my-6 bg-gray-200 h-fit ">
               <div className="flex flex-row items-center mb-6">
-                <MdRestartAlt className="w-6 h-6 mr-6 fill-black" />
-                <h1 className="font-semibold text-black text-md">
+                <MdRestartAlt className="w-6 h-6 mr-6 fill-c2" />
+                <h1 className="font-semibold text-c2 text-md">
                   Free Return On All Orders
                 </h1>
               </div>
               <div className="flex flex-row items-center mb-6">
-                <GoPackage className="w-6 h-6 mr-6 fill-black" />
-                <h1 className="font-semibold text-black text-md">
+                <GoPackage className="w-6 h-6 mr-6 fill-c2" />
+                <h1 className="font-semibold text-c2 text-md">
                   Free Standard Over $75
                 </h1>
               </div>
               <div className="flex flex-row items-center ">
-                <MdOutlineLocalShipping className="w-6 h-6 mr-6 fill-black" />
-                <h1 className="font-semibold text-black text-md">
+                <MdOutlineLocalShipping className="w-6 h-6 mr-6 fill-c2" />
+                <h1 className="font-semibold text-c2 text-md">
                   Free Express Over $150
                 </h1>
               </div>

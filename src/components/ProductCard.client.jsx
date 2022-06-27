@@ -16,7 +16,7 @@ export default function ProductCard({product}) {
   console.log('/products/' + product.handle);
 
   return (
-    <button className="relative w-full h-full pb-4 mb-4 overflow-hidden bg-white shadow-xl xsm:w-full text-md rounded-3xl ">
+    <button className="relative w-full h-full pb-4 mb-4 bg-white shadow-xl xsm:w-full text-md rounded-3xl hoverAnimation">
       {(() => {
         if (selectedVariant.compareAtPriceV2) {
           let salePercent = Math.round(
@@ -27,14 +27,14 @@ export default function ProductCard({product}) {
           );
 
           return (
-            <div className="absolute top-0 left-0 z-10 p-2 rounded-lg bg-c3 w-fit md:w-36 h-fit">
+            <div className="absolute top-0 left-0 z-10 p-2 rounded-lg bg-c3 w-fit md:w-36 h-fit ">
               <SaleTag salePercent={salePercent} />
             </div>
           );
         }
       })()}
-      <Link to={'products/' + product.handle}>
-        <div className="relative flex items-center justify-center object-cover w-full  h-[60%] ">
+      <Link to={'/products/' + product.handle}>
+        <div className="relative flex items-center justify-center object-cover w-full  h-[60%] -top-4 ">
           <Image
             className="absolute top-0 object-center w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover rounded-t-3xl "
             data={selectedVariant.image}
@@ -52,7 +52,7 @@ export default function ProductCard({product}) {
             </p>
           )} */}
 
-          <div className="text-c2 font-semibold mb-0.5 text-xl  w-[90%] h-[60px] overflow-hidden">
+          <div className="text-c2 font-semibold mb-0.5 text-xl text-left w-[90%] max-h-[60px] overflow-hidden">
             {product.title}
           </div>
 

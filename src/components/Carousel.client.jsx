@@ -50,7 +50,7 @@ const Carousel = ({products, title}) => {
             </span>
           </div>
           <div className="w-full h-[400px] ">
-            <div id="carouselScroll" className="w-full">
+            <div id="carouselScroll" className="w-full ">
               <Splide
                 options={{
                   type: 'loop',
@@ -71,7 +71,7 @@ const Carousel = ({products, title}) => {
                 {products.map((product) => {
                   return (
                     <SplideSlide>
-                      <div className="h-[400px] w-[280px] pb-8">
+                      <div className="h-[400px] w-[280px] pb-8 pt-3">
                         <ProductCard key={product.id} product={product} />
                       </div>
                     </SplideSlide>

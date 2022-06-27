@@ -11,6 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        'semi-white': 'rgb(255, 255, 255, .5)',
         'back-1': '#dbe5f4',
         'back-2': '#F6F4FC',
 

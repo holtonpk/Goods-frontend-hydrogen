@@ -6,7 +6,7 @@ const SaleTag = ({salePercent, color}) => {
     <div className="z-0 flex flex-row items-center w-fit h-fit">
       <AiFillTag className="w-3 h-3 mr-1 md:h-5 md:w-5 fill-white" />
       <h1 className="text-xs text-white whitespace-nowrap md:text-sm">
-        {'Sale ' + salePercent + '% OFF'}
+        {salePercent + '% OFF'}
       </h1>
     </div>
   );

@@ -12,8 +12,9 @@ const Contact = () => {
           <h1 className="px-4 mx-auto mt-6 text-sm text-center text-c2 w-fit md:text-xl font-f1 md:px-0 ">
             Fill out the form and the team will get back to you within 24 hours
           </h1>
-
-          <ContactForm />
+          <div className="slide-in-bottom">
+            <ContactForm />
+          </div>
         </div>
       </>
     </Layout>
