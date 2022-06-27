@@ -20,7 +20,7 @@ export default function ProductCard2({product}) {
   return (
     <button className="relative flex flex-col items-center w-full h-full p-2 mb-4 lg:p-4 bg-back-2 rounded-xl xlg:w-full text-md hoverAnimation">
       <Link to={'/products/' + product.handle}>
-        <div className="relative  w-full top-0 h-[60%] lg:h-[70%] ">
+        <div className="relative  w-full top-0 h-[130px] lg:h-[250px] ">
           <Image
             className="absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover rounded-t-xl"
             data={selectedVariant.image}
