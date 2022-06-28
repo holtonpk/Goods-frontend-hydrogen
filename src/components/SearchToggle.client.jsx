@@ -1,12 +1,10 @@
 import {IoSearchOutline, IoCloseOutline} from 'react-icons/io5';
 import {useEffect, useState} from 'react';
-import ProductCard from './ProductCard.client';
+import ProductCard from './ProductCard2.client';
 export default function Search({products}) {
   const [showSearch, setShowSearch] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const [search, setSearch] = useState('');
-
-  // let search = '';
 
   const searchInput = (e) => {
     let currentSearch = e.target.value.toUpperCase();
@@ -87,7 +85,7 @@ export default function Search({products}) {
               <div className="flex flex-row gap-6 mx-auto mt-6 w-fit">
                 {searchResults.map((product) => {
                   return (
-                    <div className="h-[400px] w-[280px] pb-8 pt-3">
+                    <div className="h-[420px] w-[280px] pb-8 pt-3">
                       <ProductCard product={product} />
                     </div>
                   );
