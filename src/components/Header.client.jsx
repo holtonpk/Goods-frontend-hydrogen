@@ -17,7 +17,7 @@ import logo from '../../public/goodslogo.svg';
 /**
  * A client component that specifies the content of the header on the website
  */
-export default function Header({collections, storeName}) {
+export default function Header({collections, storeName, products}) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [scrollbarWidth, setScrollbarWidth] = useState(0);
   const {isCartOpen} = useCartUI();
@@ -100,7 +100,7 @@ export default function Header({collections, storeName}) {
               <Navigation collections={collections} storeName={storeName} />
               <div className="order-3 w-full mx-auto md:w-full ">
                 <div className="flex flex-row justify-between float-right w-fit h-fit">
-                  <SearchToggle />
+                  <SearchToggle products={products} />
                   <Link
                     to="/Order"
                     id="tracking"

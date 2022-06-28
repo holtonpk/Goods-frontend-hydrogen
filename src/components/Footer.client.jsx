@@ -1,6 +1,6 @@
 import {Link} from '@shopify/hydrogen';
 import logo from '../../public/goodslogo.svg';
-export default function Footer({collection, product}) {
+export default function Footer() {
   return (
     <footer role="contentinfo">
       <div className="z-40 flex flex-row items-center w-full py-3 md:py-6 bg-back-2 h-fit">

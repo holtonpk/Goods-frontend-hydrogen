@@ -13,7 +13,6 @@ export default function ProductCard({product}) {
   if (selectedVariant == null) {
     return null;
   }
-  console.log('/products/' + product.handle);
 
   return (
     <button className="relative w-full h-full pb-4 mb-4 bg-white shadow-xl xsm:w-full text-md rounded-3xl hoverAnimation">

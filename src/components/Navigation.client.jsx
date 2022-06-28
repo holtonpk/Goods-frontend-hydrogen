@@ -28,7 +28,7 @@ export default function Navigation({collections}) {
         <li>
           <Link
             to={'/About'}
-            className="block p-4 text-xl font-bold hover:text-c2 text-c2 whitespace-nowrap"
+            className="block p-4 text-xl font-bold hover:text-c3 text-c2 whitespace-nowrap"
           >
             About
           </Link>
@@ -36,64 +36,66 @@ export default function Navigation({collections}) {
         <li id="Catalog" className="relative">
           <Link
             to={'/Catalog'}
-            className="block p-4 text-xl font-bold cursor-pointer hover:text-c2 text-c2 whitespace-nowrap"
+            className="block p-4 text-xl font-bold cursor-pointer hover:text-c3 text-c2 whitespace-nowrap"
           >
             Catalog
           </Link>
           <div
             id="catalogDropdown"
-            className="absolute bg-white w-fit h-fit rounded-2xl top-[110%] p-6 left-1/2 -translate-x-1/2 hidden z-40"
+            className=" absolute w-fit h-fit rounded-2xl top-[60%] pt-5 left-1/2 -translate-x-1/2  z-40 hidden"
           >
-            <BsFillTriangleFill className="absolute top-[2px] w-5 h-5 -translate-x-1/2 -translate-y-full fill-white left-1/2 " />
+            <div className="z-40 p-6 bg-white w-fit h-fit rounded-2xl">
+              <BsFillTriangleFill className="absolute -top-[7px] w-5 h-5 -translate-x-1/2 translate-y-1/2 fill-white left-1/2 " />
 
-            <div className="flex flex-col pb-4 border-b-2 border-gray-200 w-fit">
-              <h1 className="mb-2 text-lg text-left text-gray-400 w-fit whitespace-nowrap">
-                Shop by Category
-              </h1>
-
-              <div className="flex flex-col w-full gap-4">
-                <Link to={'/Catalog/Tech'}>
-                  <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c2">
-                    Tech
-                  </h1>
-                </Link>
-                <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c2">
-                  Furniture
+              <div className="flex flex-col pb-4 border-b-2 border-gray-200 w-fit">
+                <h1 className="mb-2 text-lg text-left text-gray-400 w-fit whitespace-nowrap">
+                  Shop by Category
                 </h1>
 
-                <Link to={'/Catalog/Kitchen'}>
-                  <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c2">
-                    Kitchen
+                <div className="flex flex-col w-full gap-4">
+                  <Link to={'/Catalog/Tech'}>
+                    <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c3">
+                      Tech
+                    </h1>
+                  </Link>
+                  <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c4">
+                    Furniture
                   </h1>
-                </Link>
-                <Link to={'/Catalog/Decor'}>
-                  <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c2">
-                    Decor
-                  </h1>
-                </Link>
+
+                  <Link to={'/Catalog/Kitchen'}>
+                    <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c3">
+                      Kitchen
+                    </h1>
+                  </Link>
+                  <Link to={'/Catalog/Decor'}>
+                    <h1 className="text-xl cursor-pointer text-c2 w-fit whitespace-nowrap hover:text-c4">
+                      Decor
+                    </h1>
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col mt-6 w-fit">
-              <h1 className="mb-2 text-lg text-left text-gray-400 w-fit whitespace-nowrap">
-                Shop by Collection
-              </h1>
-
-              <div className="flex flex-col w-full gap-4 ">
-                <Link to={'/Catalog/Sale'}>
-                  <h1 className="text-xl cursor-pointer w-fit text-c2 whitespace-nowrap hover:text-c2">
-                    Clearance
-                  </h1>
-                </Link>
-
-                <h1 className="text-xl cursor-pointer w-fit text-c2 whitespace-nowrap hover:text-c2">
-                  Best Selling
+              <div className="flex flex-col mt-6 w-fit">
+                <h1 className="mb-2 text-lg text-left text-gray-400 w-fit whitespace-nowrap">
+                  Shop by Collection
                 </h1>
 
-                <Link to={'/Catalog/all'}>
-                  <h1 className="text-xl cursor-pointer w-fit text-c2 whitespace-nowrap hover:text-c2">
-                    As Seen on TikTok
+                <div className="flex flex-col w-full gap-4 ">
+                  <Link to={'/Catalog/Sale'}>
+                    <h1 className="text-xl cursor-pointer w-fit text-c2 whitespace-nowrap hover:text-c3">
+                      Clearance
+                    </h1>
+                  </Link>
+
+                  <h1 className="text-xl cursor-pointer w-fit text-c2 whitespace-nowrap hover:text-c4">
+                    Best Selling
                   </h1>
-                </Link>
+
+                  <Link to={'/Catalog/all'}>
+                    <h1 className="text-xl cursor-pointer w-fit text-c2 whitespace-nowrap hover:text-c3">
+                      As Seen on TikTok
+                    </h1>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -101,7 +103,7 @@ export default function Navigation({collections}) {
         <li>
           <Link
             to={'/Contact'}
-            className="block p-4 text-xl font-bold hover:text-c2 text-c2 whitespace-nowrap"
+            className="block p-4 text-xl font-bold hover:text-c3 text-c2 whitespace-nowrap"
           >
             Contact
           </Link>
