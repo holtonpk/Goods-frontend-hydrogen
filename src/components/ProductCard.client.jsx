@@ -45,14 +45,14 @@ export default function ProductCard({product}) {
             </div>
           )}
         </div>
-        <div className="px-6 pl-2 w-fit md:mx-0 ">
+        <div className="mx-auto w-fit ">
           {/* {product.vendor && (
             <p className="text-gray-900 font-medium text-xs md:text-sm mb-0.5">
               {product.vendor}
             </p>
           )} */}
 
-          <div className="text-c2 font-semibold mb-0.5 text-xl text-left w-[90%] max-h-[60px] overflow-hidden">
+          <div className="text-c2 font-semibold mb-0.5 text-xl text-left w-[90%] max-h-[60px] overflow-hidden ">
             {product.title}
           </div>
 
