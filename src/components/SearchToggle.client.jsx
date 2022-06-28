@@ -2,7 +2,7 @@ import {IoSearchOutline, IoCloseOutline} from 'react-icons/io5';
 import {useEffect, useState} from 'react';
 import ProductCard from './ProductCard.client';
 export default function Search({products}) {
-  const [showSearch, setShowSearch] = useState(true);
+  const [showSearch, setShowSearch] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const [search, setSearch] = useState('');
 
